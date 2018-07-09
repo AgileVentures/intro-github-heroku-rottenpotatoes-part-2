@@ -1,7 +1,7 @@
 require 'octokit'
 
 describe "Github" do
-  it "should contain a repository for the user" do
+  it "web.rb file should contain 'Hello, SaaS world'" do
 
     file_contents = Octokit.contents ENV['GITHUB_USERNAME']+'/ruby-sample', :path => 'web.rb',
                                             :accept => 'application/vnd.github.raw'
